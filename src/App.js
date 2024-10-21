@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  // Definiere eine Variable für den aktuellen Tag oder eine einfache Begrüßung
+  const greeting = 'Hallo, heute ist ein schöner Tag!';
+  const zahl1 = 3;
+  const zahl2 = 5;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Willkommen zu meiner ersten React-App</h1>
+      <h2>{greeting}</h2>
+      <h3>{zahl1} + {zahl2} = {zahl1 + zahl2}</h3> {/* Beispiel für eine einfache Berechnung */}
+    </>
   );
 }
 
 export default App;
+
